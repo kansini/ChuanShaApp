@@ -143,10 +143,6 @@ table {
   width: 100%;
 }
 
-.SwitchPeriod {
-  margin: 8px 0 16px 0;
-}
-
 .btn-group {
   width: 100%;
   display: -webkit-box;
@@ -156,4 +152,46 @@ table {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 16px 0;
+}
+.fadeIn-enter-active,
+.fadeIn-leave-active {
+  transition: all ease .4s;
+}
+
+.fadeIn-enter,
+.fadeIn-leave-active {
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.scaleIn-enter-active {
+  transition: all ease .5s;
+}
+
+.scaleIn-leave-active {
+  transition: all ease .8s;
+}
+
+.scaleIn-enter {
+  opacity: 0;
+  transform: scale(3) translateY(-100%);
+  filter: blur(20px);
+}
+
+.scaleIn-leave-active {
+  opacity: 0;
+  transform: scale(4);
+  filter: blur(10px);
+}
+
+.slideDown-enter-active,
+.slideDown-leave-active {
+  transition: all ease-in-out .3s;
+  transform: translateY(0);
+}
+
+.slideDown-enter,
+.slideDown-leave-active {
+  opacity: 0;
+  transform: translateY(-10%)
 }

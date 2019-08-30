@@ -27,6 +27,7 @@
         height: calc(560rem / 96);
         display: flex;
         justify-content: space-between;
+		transition:all ease .4s;
 
         div {
             position: relative;
