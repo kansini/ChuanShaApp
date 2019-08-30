@@ -1,13 +1,18 @@
 <template>
-    $END$
+    <div class="list">
+        <span>list</span>
+    </div>
 </template>
 
 <script>
+
     export default {
-        name: "List"
+        name: "List",
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+    .list {
 
+    }
 </style>
