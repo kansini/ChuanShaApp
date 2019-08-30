@@ -21,7 +21,7 @@
 <style lang="scss" scoped>
     .main-menu {
         position: absolute;
-        top: calc(196rem / 96);
+        top: calc(160rem / 96);
         right: calc(400rem / 96);
         width: calc(594rem / 96);
         height: calc(560rem / 96);

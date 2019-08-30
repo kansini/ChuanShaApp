@@ -155,13 +155,13 @@ table {
 }
 .fadeIn-enter-active,
 .fadeIn-leave-active {
-  transition: all ease .4s;
+  transition: all ease 1s;
 }
 
 .fadeIn-enter,
 .fadeIn-leave-active {
   opacity: 0;
-  filter: blur(10px);
+  filter: blur(20px);
 }
 
 .scaleIn-enter-active {
