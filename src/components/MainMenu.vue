@@ -24,7 +24,7 @@
         top: calc(160rem / 96);
         right: calc(400rem / 96);
         width: calc(594rem / 96);
-        height: calc(560rem / 96);
+        //height: calc(560rem / 96);
         display: flex;
         justify-content: space-between;
 		transition:all ease .4s;
@@ -55,7 +55,7 @@
                 position: absolute;
                 content: '';
                 width: 4px;
-                height: calc(560rem / 96);
+                height: 100%;
                 background: #ebb887;
                 top: 0;
                 left: calc(-16rem / 96);
@@ -65,7 +65,7 @@
                 position: absolute;
                 content: '';
                 width: 4px;
-                height: calc(560rem / 96);
+                height: 100%;
                 background: #ebb887;
                 //background:  url('../assets/img/clipMask.jpg') center calc(100rem / 96);
                 top: 0;

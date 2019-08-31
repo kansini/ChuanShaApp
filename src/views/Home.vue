@@ -15,7 +15,7 @@
                 menuData: [
                     {
                         "name": "书记工作室",
-                        "path": "/list"
+                        "path": "/secretary"
                     },
                     {
                         "name": "党代表工作室",

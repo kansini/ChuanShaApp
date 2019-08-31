@@ -1,7 +1,7 @@
 <template>
 	<div id="app">
 		<div class="logo"></div>
-		<div class="btn-fullScreen" @click="toggleFullscreen"></div>
+		<div class="btn-fullScreen" :class="{isFullScreen:isFullScreen}" @click="toggleFullscreen"></div>
 		<transition name="fadeIn">
 			<router-view />
 		</transition>
@@ -12,6 +12,11 @@
 
 	export default {
 		name: "App",
+		data() {
+			return {
+				isFullScreen: false
+			}
+		},
 		methods: {
 			toggleFullscreen() {
 				if (!screenfull.enabled) {
@@ -22,6 +27,7 @@
 					return false
 				}
 				screenfull.toggle()
+				this.isFullScreen = !this.isFullScreen
 			}
 		}
 	}
@@ -46,13 +52,18 @@
 
 		.btn-fullScreen {
 			position: absolute;
-			top: calc(40rem / 96);
-			right: calc(40rem / 96);
+			top: calc(32rem / 96);
+			right: calc(16rem / 96);
 			width: calc(40rem / 96);
 			height: calc(40rem / 96);
-			background: #ebb887;
 			border-radius: 6px;
 			cursor: pointer;
+			background: url(./assets/img/ico-fullscreen.svg) no-repeat center;
+			transition: background ease .6s;
+		}
+		.isFullScreen{
+			background: url(./assets/img/ico-unfullscreen.svg) no-repeat center;
+			
 		}
 	}
 </style>
