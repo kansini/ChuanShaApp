@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import axios from 'axios'
 
-axios.defaults.baseURL = './api'
+axios.defaults.baseURL = './api/'
 Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 

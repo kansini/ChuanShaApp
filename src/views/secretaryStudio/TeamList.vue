@@ -1,6 +1,7 @@
 <template>
 	<div class="list-content">
-		<div class="list-group" v-for="(item,index) in NPCMemberList.data" :key="item.id" v-if="index < NPCMemberList.pageSie">
+		<!-- {{studioTile}} -->
+		<div class="list-group" v-for="(item,index) in teamMember" :key="item.id">
 			<div class="list-item">{{item.id}}</div>
 			<div class="list-item">{{item.name}}</div>
 			<div class="list-item">{{item.position}}</div>
@@ -13,96 +14,23 @@
 		name: "List",
 		data() {
 			return {
-				title: '团队成员',
-				isFirst: true,
-				isLast: false,
-				NPCMemberList: {
-					"msg": "ok",
-					"pageSie": 8,
-					"data": [{
-							"id": "001",
-							"name": "马桂英",
-							"position": "新吉村民委员会村委委员"
-						},
-						{
-							"id": "002",
-							"name": "刘晓薇",
-							"position": "民义村民委员会村会计"
-						},
-						{
-							"id": "003",
-							"name": "马桂英",
-							"position": "新吉村民委员会村委委员"
-						},
-						{
-							"id": "004",
-							"name": "马桂英",
-							"position": "民义村民委员会村会计"
-						},
-						{
-							"id": "005",
-							"name": "马桂英",
-							"position": "新吉村民委员会村委委员"
-						},
-						{
-							"id": "006",
-							"name": "马桂英",
-							"position": "新吉村民委员会村委委员"
-						},
-						{
-							"id": "007",
-							"name": "马桂英",
-							"position": "新吉村民委员会村委委员"
-						},
-						{
-							"id": "008",
-							"name": "马桂英",
-							"position": "新吉村民委员会村委委员"
-						},
-						{
-							"id": "009",
-							"name": "马桂英",
-							"position": "新吉村民委员会村委委员"
-						},
-						{
-							"id": "010",
-							"name": "刘晓薇",
-							"position": "民义村民委员会村会计"
-						},
-						{
-							"id": "011",
-							"name": "马桂英",
-							"position": "新吉村民委员会村委委员"
-						},
-						{
-							"id": "012",
-							"name": "马桂英",
-							"position": "民义村民委员会村会计"
-						},
-						{
-							"id": "013",
-							"name": "马桂英",
-							"position": "新吉村民委员会村委委员"
-						},
-						{
-							"id": "014",
-							"name": "马桂英",
-							"position": "新吉村民委员会村委委员"
-						},
-						{
-							"id": "015",
-							"name": "马桂英",
-							"position": "新吉村民委员会村委委员"
-						},
-						{
-							"id": "016",
-							"name": "马桂英",
-							"position": "新吉村民委员会村委委员"
-						}
-					]
-				}
+				studioData: {},
+				teamMember: [],
+				studioTile: '',
+				pageSie: null,
 			}
 		},
+		mounted() {
+			this.getTeamMemberData()
+
+
+		},
+		methods: {
+			getTeamMemberData() {
+				this.$axios.get('secretaryStudio.json')
+					.then(res => this.teamMember = res.data.data[0].teamMember.data)
+			}
+		}
 	}
 </script>
 
