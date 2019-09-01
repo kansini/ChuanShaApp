@@ -1,29 +1,31 @@
 <template>
     <div class="home">
-        <mainMenu :menuData="menuData"/>
-    </div>
+		<div class="logo"></div>
+		<div class="flowers"></div>
+        <menus :menuData="menuData"/>
+	 </div>
 </template>
 
 <script>
-    import mainMenu from '@/components/MainMenu'
+    import menus from '@/components/Menu'
 
     export default {
         name: 'home',
-        components: {mainMenu},
+        components: {menus},
         data() {
             return {
                 menuData: [
                     {
                         "name": "书记工作室",
-                        "path": "/secretary"
+                        "path": "/nav"
                     },
                     {
                         "name": "党代表工作室",
-                        "path": "/"
+                        "path": "/pr"
                     },
                     {
                         "name": "人大代表工作室",
-                        "path": "/"
+                        "path": "/npc"
                     }
                 ]
             }
@@ -32,6 +34,15 @@
 </script>
 <style lang="scss" scoped>
     .home {
-
+		
+		.flowers {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: calc(562rem / 96);
+			height: calc(421rem / 96);
+			background: url("../assets/img/flowers.png") no-repeat center;
+			background-size: 100%;
+		}
     }
 </style>
