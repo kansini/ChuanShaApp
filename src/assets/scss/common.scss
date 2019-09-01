@@ -1,8 +1,9 @@
 //* reset *//
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 li {
   list-style: none;
 }
@@ -29,22 +30,24 @@ table {
   border-spacing: 0;
 }
 
-.nav{
-	.router-link-exact-active{
-		color: #AD6D23;
-		position: relative;
-		&::after{
-			position: absolute;
-			content: '';
-			width: 80%;
-			height: calc(24rem / 96);
-			background: rgba(220,154,79,.5);
-			border-radius: 12px;
-			left: 0;
-			bottom: calc(24rem / 96);
-		}
-	}
+.nav {
+  .router-link-exact-active {
+    color: #AD6D23;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 80%;
+      height: calc(24rem / 96);
+      background: rgba(220, 154, 79, .5);
+      border-radius: 12px;
+      left: 0;
+      bottom: calc(24rem / 96);
+    }
+  }
 }
+
 .btn-group {
   width: 100%;
   display: -webkit-box;
@@ -55,83 +58,87 @@ table {
   justify-content: center;
   padding: 16px 0;
 }
-.list-title{
-	text-align: center;
-	font-size: calc(56rem / 96);
-	margin-bottom: calc(24rem / 96);
-	font-family: "xiaokai";
-	font-weight: bolder;
-	color: #d22000;
-	text-shadow:2px 2px 10px rgba(173, 0, 10, .5);
-	span {
-		position: relative;
-	
-		&::before {
-			position: absolute;
-			content: '';
-			left: calc(-32rem / 96);
-			top: calc(26rem / 96);
-			width: calc(16rem / 96);
-			height: calc(16rem / 96);
-			border-radius: 4px;
-			background: rgba(173, 0, 10, .9);
-			transform: rotate(45deg);
-			box-shadow: 2px 2px 10px rgba(173, 0, 10, .5);
-		}
-	
-		&::after {
-			position: absolute;
-			content: '';
-			right: calc(-32rem / 96);
-			top: calc(26rem / 96);
-			width: calc(16rem / 96);
-			height: calc(16rem / 96);
-			border-radius: 4px;
-			background: rgba(173, 0, 10, .9);
-			transform: rotate(45deg);
-			box-shadow: 2px 2px 10px rgba(173, 0, 10, .5);
-		}
-	}
+
+.list-title {
+  text-align: center;
+  font-size: calc(56rem / 96);
+  margin-bottom: calc(24rem / 96);
+  font-family: "xiaokai";
+  font-weight: bolder;
+  color: #d22000;
+  text-shadow: 2px 2px 10px rgba(173, 0, 10, .5);
+
+  span {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: calc(-32rem / 96);
+      top: calc(26rem / 96);
+      width: calc(16rem / 96);
+      height: calc(16rem / 96);
+      border-radius: 4px;
+      background: rgba(173, 0, 10, .9);
+      transform: rotate(45deg);
+      box-shadow: 2px 2px 10px rgba(173, 0, 10, .5);
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      right: calc(-32rem / 96);
+      top: calc(26rem / 96);
+      width: calc(16rem / 96);
+      height: calc(16rem / 96);
+      border-radius: 4px;
+      background: rgba(173, 0, 10, .9);
+      transform: rotate(45deg);
+      box-shadow: 2px 2px 10px rgba(173, 0, 10, .5);
+    }
+  }
 }
+
 .list-content {
-			padding: calc(16rem / 96) calc(40rem / 96);
-			font-family: "kaiti";
-			width: calc(996rem / 96);
-			height: calc(640rem / 96);
-			background: rgba(211, 16, 26, .7);
-			border: 6px solid #fff;
-			border-radius: calc(16rem / 96);
-			box-sizing: border-box;
-			font-size: calc(24rem / 96);
-			color: #fffde3;
+  padding: calc(16rem / 96) calc(40rem / 96);
+  font-family: "kaiti";
+  width: calc(996rem / 96);
+  height: calc(640rem / 96);
+  background: rgba(211, 16, 26, .7);
+  border: 6px solid #fff;
+  border-radius: calc(16rem / 96);
+  box-sizing: border-box;
+  font-size: calc(24rem / 96);
+  color: #fffde3;
 
-			.list-group {
-				display: flex;
-				justify-content: flex-start;
+  .list-group {
+    display: flex;
+    justify-content: flex-start;
 
-				.list-item {
-					width: 100%;
-					font-family: "kaiti";
-					height: calc(72rem / 96);
-					line-height: calc(72rem / 96);
-					border-bottom: 1px solid rgba(255, 255, 227, .2);
+    .list-item {
+      width: 100%;
+      font-family: "kaiti";
+      height: calc(72rem / 96);
+      line-height: calc(72rem / 96);
+      border-bottom: 1px solid rgba(255, 255, 227, .2);
 
-					&:nth-child(1) {
-						width: 10%;
-					}
+      &:nth-child(1) {
+        width: 10%;
+      }
 
-					&:nth-child(2) {
-						width: 15%;
-						//text-align: center;
-						color: #fff;
-					}
+      &:nth-child(2) {
+        width: 15%;
+        //text-align: center;
+        color: #fff;
+      }
 
-					&:nth-last-child(1) {
-						width: 80%;
-					}
-				}
-			}
-		}
+      &:nth-last-child(1) {
+        width: 80%;
+      }
+    }
+  }
+}
+
 .fadeIn-enter-active,
 .fadeIn-leave-active {
   transition: all ease 1s;
