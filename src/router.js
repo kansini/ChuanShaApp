@@ -19,7 +19,7 @@ export default new Router({
 			children: [{
 					path: '/secretary',
 					name: 'secretary',
-					component: () => import('@/views/secretary/Nav')
+					component: () => import('@/views/secretary')
 				},
 				{
 					path: '/pr',
@@ -46,28 +46,6 @@ export default new Router({
 
 				},
 			]
-		},
-		// {
-		// 	path: '/secretary',
-		// 	name: 'secretary',
-		// 	component: () => import('@/views/secretaryStudio/Nav')
-		// },
-		// {
-		// 	path: '/secretarList',
-		// 	name: 'secretarList',
-		// 	component: () => import('@/views/secretaryStudio/SecretarList'),
-		// },
-		// {
-		// 	path: '/secretarList',
-		// 	name: 'secretarList',
-		// 	component: () => import('@/views/secretaryStudio/Index'),
-		// 	redirect: '/teamList',
-		// 	children: [{
-		// 		path: '/teamList',
-		// 		name: 'teamList',
-		// 		component: () => import('@/views/secretaryStudio/TeamList')
-		// 	}]
-		// },
-
+		}
 	]
 })
