@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "党代表活动党代表活动1",
+    "foto": "./img/events/001.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "党代表活动党代表活动2",
+    "foto": "./img/events/002.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "党代表活动3",
+    "foto": "./img/events/003.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "党代表活动党代4",
+    "foto": "./img/events/004.jpeg"
+  }
+]
