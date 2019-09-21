@@ -6,6 +6,10 @@
 
         <div class="list-btn-group">
             <div class="btn-group-right">
+                <router-link to="/secretary" tag="div" class="list-btn">返回</router-link>
+            </div>
+
+            <div class="btn-group-right">
                 <div class="list-btn" :class="{listBtnDisable:isFirst}">上一页</div>
                 <div class="list-btn" :class="{listBtnDisable:isLast}">下一页</div>
             </div>

@@ -34,11 +34,11 @@
                 },
                     {
                         "name": "康天祥书记工作室",
-                        "path": "/"
+                        "path": "/secretaryNav"
                     },
                     {
                         "name": "马凤英书记工作室",
-                        "path": "/"
+                        "path": "/secretaryNav"
                     }
                 ],
 
