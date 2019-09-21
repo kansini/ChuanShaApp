@@ -4,14 +4,13 @@
             <span>{{title}}</span>
         </div>
         <div class="list-content">
-            <div class="list-group" v-for="(item,index) in npcMember" :key="item.id">
-                <div class="list-item">{{item.id}}</div>
-                <div class="list-item">{{item.name}}</div>
-                <div class="list-item">{{item.position}}</div>
-            </div>
+            <person-list :personData="prData"/>
         </div>
+
         <div class="list-btn-group">
             <div class="btn-group-right">
+                <router-link to="/prEvent" tag="div" class="list-btn">带教学员</router-link>
+                <router-link to="/prEvent" tag="div" class="list-btn">带教计划</router-link>
                 <router-link to="/prEvent" tag="div" class="list-btn">活动集锦</router-link>
             </div>
 
@@ -28,52 +27,19 @@
         name: "List",
         data() {
             return {
-                title: '党代表名单',
+                title: '团队成员',
                 isFirst: true,
                 isLast: false,
-                "npcMember":[
-                    {
-                        "id":"001",
-                        "name":"章叁",
-                        "position":"新吉村民委员会村委委员"
-                    },
-                    {
-                        "id":"002",
-                        "name":"李肆",
-                        "position":"新吉村民委员会村委委员"
-                    },
-                    {
-                        "id":"003",
-                        "name":"汪伍",
-                        "position":"新吉村民委员会村委委员"
-                    },
-                    {
-                        "id":"004",
-                        "name":"赵陆",
-                        "position":"新吉村民委员会村委委员"
-                    },
-                    {
-                        "id":"005",
-                        "name":"章叁",
-                        "position":"新吉村民委员会村委委员"
-                    },
-                    {
-                        "id":"006",
-                        "name":"汪伍",
-                        "position":"新吉村民委员会村委委员"
-                    },
-                    {
-                        "id":"007",
-                        "name":"赵陆",
-                        "position":"新吉村民委员会村委委员"
-                    },
-                    {
-                        "id":"008",
-                        "name":"章叁",
-                        "position":"新吉村民委员会村委委员"
-                    }
-                ]
-                //npcMember:[]
+                prData: []
+            }
+        },
+        mounted() {
+            this.getPrData()
+        },
+        methods: {
+            getPrData() {
+                this.$axios.get('prList.json')
+                    .then(res => this.prData = res.data)
             }
         }
     }
@@ -82,13 +48,10 @@
 <style lang="scss" scoped>
     .list-container {
         position: absolute;
-        top: calc(64rem / 96);
+        top: calc(40rem / 96);
         left: calc(480rem / 96);
         width: calc(1004rem / 96);
-        z-index:999;
-
-
-
+        z-index: 9999;
 
 
         .list-btn-group {
@@ -124,7 +87,7 @@
             .listBtnDisable {
                 opacity: .9;
                 cursor: not-allowed;
-                filter:grayscale(70%);
+                filter: grayscale(70%);
             }
         }
 
