@@ -77,7 +77,7 @@
             bottom: calc(32rem / 96);
             width: calc(1190rem / 96);
             height: calc(520rem / 96);
-            background: url("./assets/img/building.png") no-repeat center;
+            background: url("./assets/img/building.png") no-repeat center -20px;
             background-size: 100%;
             z-index: 998;
             animation: fadeIn 1s linear forwards;
@@ -89,7 +89,7 @@
             bottom: 0;
             width: 100%;
             height: calc(208rem / 96);
-            background: url("./assets/img/flag.png") no-repeat center;
+            background: url("./assets/img/flag.png") no-repeat center 10px;
             background-size: 100%;
             z-index: 999;
             animation: bottom .6s linear forwards;
