@@ -1,6 +1,7 @@
 <template>
     <div>
         <div class="list-content">
+            <div class="current-year">{{currentYear}}年</div>
             <event-list :eventData="prEventData"/>
         </div>
 
@@ -25,7 +26,8 @@
                 title: '活动集锦',
                 isFirst: true,
                 isLast: false,
-                prEventData: []
+                prEventData: [],
+                currentYear: 2019
             }
         },
         mounted() {
@@ -41,6 +43,12 @@
 </script>
 
 <style lang="scss" scoped>
+    .current-year{
+        font-size: 28px;
+        text-align: center;
+        margin-top: 8px;
+    }
+
     .list-container {
         position: absolute;
         top: calc(64rem / 96);

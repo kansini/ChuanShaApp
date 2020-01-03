@@ -45,10 +45,10 @@
 
 <style lang="scss" scoped>
     .list-container {
-        position: absolute;
-        top: calc(40rem / 96);
-        left: calc(480rem / 96);
-        width: calc(1004rem / 96);
+       // position: absolute;
+       // top: calc(40rem / 96);
+       // left: calc(480rem / 96);
+       // width: calc(1004rem / 96);
         z-index: 9999;
 
 

@@ -22,7 +22,7 @@
     .menu {
         position: absolute;
         top: calc(180rem / 96);
-        left: calc(840rem / 96);
+        left: calc(720rem / 96);
         width: calc(594rem / 96);
         min-height: calc(560rem / 96);
         display: flex;

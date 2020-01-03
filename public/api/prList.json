@@ -9,7 +9,8 @@
     "id": 2,
     "name": "李肆",
     "position": "新吉村民委员会村委委员",
-    "foto": "./img/pr/002.jpeg"
+    "foto": "./img/pr/002.jpeg",
+    "isCurrent": true
   },
   {
     "id": 3,
@@ -46,5 +47,18 @@
     "name": "李肆",
     "position": "新吉村民委员会村委委员",
     "foto": "./img/pr/001.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "李肆",
+    "position": "新吉村民委员会村委委员",
+    "foto": "./img/pr/005.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "李肆",
+    "position": "新吉村民委员会村委委员",
+    "foto": "./img/pr/001.jpeg"
   }
+
 ]

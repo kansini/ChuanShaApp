@@ -22,7 +22,7 @@
 	.subMenu {
 		position: absolute;
 		top: calc(120rem / 96);
-		right: calc(80rem / 96);
+		right: calc(24rem / 96);
 		transition: all ease .4s;
 		text-align: left;
 		z-index:999;

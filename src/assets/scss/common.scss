@@ -44,7 +44,7 @@ table {
       width: 100%;
       height: calc(16rem / 96);
       border-radius: 40px;
-      background: rgba(173,109,35,.4);
+      background: rgba(173, 109, 35, .4);
       //box-shadow: 0px 0px 10px #AD6D23;;
     }
 
@@ -122,17 +122,17 @@ table {
 
 .list-container {
   position: absolute;
-  top: calc(64rem / 96);
-  left: calc(480rem / 96);
+  top: calc(24rem / 96);
+  left: calc(440rem / 96);
   width: calc(1004rem / 96);
-  z-index: 999;
+  z-index: 9999;
 }
 
 .list-content {
   padding: calc(8rem / 96);
   font-family: "kaiti";
-  width: calc(996rem / 96);
-  max-height: calc(720rem / 96);
+  width: calc(1096rem / 96);
+  max-height: calc(800rem / 96);
   background: rgba(211, 16, 26, .8);
   overflow: scroll;
   //background: rgba(255, 255, 255, .7);

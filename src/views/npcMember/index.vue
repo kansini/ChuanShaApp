@@ -27,7 +27,7 @@
                 title: '人大代表名单',
                 isFirst: true,
                 isLast: false,
-                npcMember:[]
+                npcMember: []
             }
         },
         mounted() {
@@ -44,11 +44,11 @@
 
 <style lang="scss" scoped>
     .list-container {
-        position: absolute;
-        top: calc(64rem / 96);
-        left: calc(480rem / 96);
-        width: calc(1004rem / 96);
-        z-index: 999;
+        // position: absolute;
+        // top: calc(64rem / 96);
+        // left: calc(480rem / 96);
+        // width: calc(1004rem / 96);
+         z-index: 9999;
 
         .list-btn-group {
             font-family: "kaiti";

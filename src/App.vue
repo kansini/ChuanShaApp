@@ -44,10 +44,10 @@
 
         .logo {
             position: absolute;
-            left: calc(230rem / 96);
-            top: calc(72rem / 96);
-            width: calc(222rem / 96);
-            height: calc(770rem / 96);
+            left: calc(184rem / 96);
+            top: calc(48rem / 96);
+            width: calc(210rem / 96);
+            height: calc(720rem / 96);
             background: url("./assets/img/logo.png") no-repeat center;
             background-size: 100%;
         }
